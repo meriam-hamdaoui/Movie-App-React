@@ -21,8 +21,8 @@ const MovieCard = ({
       <div className="poster">
         <img src={posterURL} alt={title} />
         <div className="description">
-          <h5>Overview:</h5>
-          <p>{description}</p>
+          <h2>Overview:</h2>
+          <h5>{description}</h5>
         </div>
       </div>
 

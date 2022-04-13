@@ -11,14 +11,11 @@
   transform: scale(0.95);
   transition: all 0.5s;
 }
-
 /* .movieCard:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 10px -12.12px rgba(0, 0, 0, 0.02);
 } */
 .cardHeader {
-  /* border: 1px solid red; 
-   text-align: center; */
   display: flex;
   margin-left: 19%;
   position: relative;
@@ -66,16 +63,6 @@
 .cardBottom a:hover {
   color: gold;
 }
-/* .cardHeader {
-  /* border: 1px solid white; */
-/*width: 95%;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 3.5%;
-} */
-/* .title {
-  padding-left: 15%;
-} */
 .description {
   padding-left: 15px;
   display: flex;
