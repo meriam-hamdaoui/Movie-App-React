@@ -1,0 +1,7 @@
+.movieList {
+  display: grid;
+  /* the repeat function will make our grid responsive without media query */
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  margin: 1%;
+}

@@ -1,0 +1,121 @@
+.movieCard {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  background: #116466;
+  box-shadow: 0 0 30px 3px gold;
+  border-radius: 25px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  margin: 20px 0;
+  transform: scale(0.95);
+  transition: all 0.5s;
+}
+/* .movieCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px -12.12px rgba(0, 0, 0, 0.02);
+} */
+.cardHeader {
+  /* border: 1px solid red; 
+   text-align: center; */
+  display: flex;
+  margin-left: 19%;
+  position: relative;
+  top: 1%;
+}
+.btnX {
+  border: none;
+  background: transparent;
+  position: fixed;
+  top: 2%;
+  left: 88%;
+}
+.fa-xmark {
+  color: #ffd52d;
+  transition: 0.2s;
+  font-size: 40px;
+}
+.title span {
+  font-size: 20px;
+}
+.poster {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.poster img {
+  width: 250px;
+  height: 250px;
+}
+.cardBottom {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+.cardBottom a {
+  color: darkblue;
+  text-decoration: none;
+}
+.cardBottom a:hover {
+  color: gold;
+}
+/* .cardHeader {
+  /* border: 1px solid white; */
+/*width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3.5%;
+} */
+/* .title {
+  padding-left: 15%;
+} */
+.description p {
+  padding-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* respopnsive design */
+@media only screen and (max-width: 768px) {
+  .poster img {
+    width: 90%;
+    height: auto;
+  }
+  .title {
+    padding-left: 5%;
+  }
+  .cardBottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .poster img {
+    width: 90%;
+    height: auto;
+  }
+  .title {
+    padding-left: 7%;
+  }
+  .cardBottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .poster img {
+    width: 90%;
+    height: auto;
+  }
+  .title {
+    padding-left: 5%;
+  }
+  .cardBottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+  }
+}
