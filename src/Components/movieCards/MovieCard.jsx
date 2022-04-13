@@ -12,7 +12,8 @@ const MovieCard = ({
       <div className="cardHeader">
         <h3 className="title">
           {title}
-          <br /> <span>released</span> {year}
+          <br />
+          &nbsp; &nbsp; &nbsp;<span>released</span> {year}
         </h3>
         <button onClick={() => deleteFunction(id)} className="btnX">
           <i class="fa-solid fa-xmark"></i>
@@ -21,7 +22,7 @@ const MovieCard = ({
       <div className="poster">
         <img src={posterURL} alt={title} />
         <div className="description">
-          <h2>Overview:</h2>
+          <h3>Overview:</h3>
           <h5>{description}</h5>
         </div>
       </div>

@@ -2,6 +2,9 @@
   font-family: "Grape Nuts", cursive;
   font-size: 150px;
 }
+.addSpan:hover {
+  color: #116466;
+}
 /* respopnsive design */
 @media only screen and (max-width: 768px) {
   .addSpan {
