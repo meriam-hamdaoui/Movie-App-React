@@ -20,10 +20,12 @@ const MovieCard = ({
       </div>
       <div className="poster">
         <img src={posterURL} alt={title} />
+        <div className="description">
+          <h5>Overview:</h5>
+          <p>{description}</p>
+        </div>
       </div>
-      <div className="description">
-        <p>{description}</p>
-      </div>
+
       <div className="cardBottom">
         <a href={trailerURL} target="_blank" rel="noopener noreferrer">
           WATCH TRAILER ►

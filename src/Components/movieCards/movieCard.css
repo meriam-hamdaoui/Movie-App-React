@@ -11,6 +11,7 @@
   transform: scale(0.95);
   transition: all 0.5s;
 }
+
 /* .movieCard:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 10px -12.12px rgba(0, 0, 0, 0.02);
@@ -42,6 +43,12 @@
   /* border: 1px solid black; */
   display: flex;
   justify-content: center;
+  align-items: center;
+  /*  */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .poster img {
   width: 250px;
@@ -69,12 +76,25 @@
 /* .title {
   padding-left: 15%;
 } */
-.description p {
+.description {
   padding-left: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  max-width: 100%;
+  height: 100%;
+  /* animate the descriptionpart */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(181, 158, 30);
+  color: white;
+  transform: translateX(100%);
 }
-
+.movieCard:hover .description {
+  transform: translateX(0%);
+}
 /* respopnsive design */
 @media only screen and (max-width: 768px) {
   .poster img {
